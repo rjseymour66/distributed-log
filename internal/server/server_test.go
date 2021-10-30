@@ -34,7 +34,7 @@ func TestServer(t *testing.T) {
 }
 
 func setupTest(t *testing.T, fn func(*Config)) (
-	cleint api.LogClient,
+	client api.LogClient,
 	cfg *Config,
 	teardown func(),
 ) {
@@ -48,6 +48,9 @@ func setupTest(t *testing.T, fn func(*Config)) (
 	require.NoError(t, err)
 
 	dir, err := ioutil.TempDir("", "server-test")
+	require.NoError(t, err)
+
+	clog, err := log.NewLog(dir, log.Config{})
 	require.NoError(t, err)
 
 	cfg = &Config{
