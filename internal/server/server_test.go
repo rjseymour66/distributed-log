@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	api "github.comrjseymour66/distributed-log/api/v1"
+	api "github.com/rjseymour66/distributed-log/api/v1"
 	"github.comrjseymour66/distributed-log/internal/log"
 	"google.golang.org/grpc"
 )

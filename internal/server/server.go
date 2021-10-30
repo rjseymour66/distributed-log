@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	api "github.com/rjseymour66/distributed-go/api/v1"
+	api "github.com/rjseymour66/distributed-log/api/v1"
 	"google.golang.org/grpc"
 )
 
