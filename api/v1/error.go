@@ -14,7 +14,7 @@ type ErrOffsetOutOfRange struct {
 func (e ErrOffsetOutOfRange) GRPCStatus() *status.Status {
 	st := status.New(
 		404,
-		fmt.Springf("offset out of range: %d", e.Offset),
+		fmt.Sprintf("offset out of range: %d", e.Offset),
 	)
 	msg := fmt.Sprintf(
 		"The requested offset is outside the log's range: %d",
