@@ -3,8 +3,9 @@ module github.com/rjseymour66/distributed-log
 go 1.16
 
 require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/casbin/casbin v1.9.1
 	github.com/gorilla/mux v1.8.0
+	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/stretchr/testify v1.7.0
